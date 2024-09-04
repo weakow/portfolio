@@ -9,11 +9,13 @@ export const metadata = {
 
 export default function Page() {
   return (
-    <section>
+    <>
       <Navbar />
+      <section className="max-w-xl mx-4 mt-8 sm:mx-auto">
       <h1 className="font-semibold text-2xl mb-8 tracking-tighter">My Blog</h1>
       <BlogPosts />
+      </section>
       <Footer />
-    </section>
+    </>
   )
 }
