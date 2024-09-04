@@ -27,9 +27,9 @@ export async function GET() {
   const rssFeed = `<?xml version="1.0" encoding="UTF-8" ?>
   <rss version="2.0">
     <channel>
-        <title>My Portfolio</title>
+        <title>weakow</title>
         <link>${baseUrl}</link>
-        <description>This is my portfolio RSS feed</description>
+        <description>weakow 关注数字产品设计与技术，尤其关注设计与代码之间如何相互协调，形成快速构建好产品的体系。</description>
         ${itemsXml}
     </channel>
   </rss>`
