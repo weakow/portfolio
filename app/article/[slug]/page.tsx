@@ -1,12 +1,12 @@
 import { notFound } from 'next/navigation'
 import { CustomMDX } from 'app/components/mdx'
-import { formatDate, getBlogPosts } from 'app/blog/utils'
+import { formatDate, getArticles } from 'app/article/utils'
 import { baseUrl } from 'app/sitemap'
 import { Navbar } from 'app/components/nav'
 import Footer from 'app/components/footer'
 
 export async function generateStaticParams() {
-  let posts = getBlogPosts()
+  let posts = getArticles()
 
   return posts.map((post) => ({
     slug: post.slug,
@@ -14,7 +14,7 @@ export async function generateStaticParams() {
 }
 
 export function generateMetadata({ params }) {
-  let post = getBlogPosts().find((post) => post.slug === params.slug)
+  let post = getArticles().find((post) => post.slug === params.slug)
   if (!post) {
     return
   }
@@ -37,7 +37,7 @@ export function generateMetadata({ params }) {
       description,
       type: 'article',
       publishedTime,
-      url: `${baseUrl}/blog/${post.slug}`,
+      url: `${baseUrl}/article/${post.slug}`,
       images: [
         {
           url: ogImage,
@@ -53,8 +53,8 @@ export function generateMetadata({ params }) {
   }
 }
 
-export default function Blog({ params }) {
-  let post = getBlogPosts().find((post) => post.slug === params.slug)
+export default function Article({ params }) {
+  let post = getArticles().find((post) => post.slug === params.slug)
 
   if (!post) {
     notFound()
