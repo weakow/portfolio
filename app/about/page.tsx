@@ -1,4 +1,4 @@
-import { Navbar } from "app/components/nav";
+import { Navbar } from "app/components/nav-simple";
 import Footer from "app/components/footer";
 
 export const metadata = {

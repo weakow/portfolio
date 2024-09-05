@@ -1,12 +1,6 @@
 import Link from "next/link";
 import Logo from "./logo";
 
-const navItems = {
-  "/about": {
-    name: "Being Social",
-  },
-};
-
 export function Navbar() {
   return (
     <div className="max-w-xl mx-4 mt-8 sm:mx-auto">
@@ -21,19 +15,6 @@ export function Navbar() {
                 <Logo size={36} />
               </Link>
             </div>
-            <nav className="flex justify-end text-xs font-bold">
-              {Object.entries(navItems).map(([path, { name }]) => {
-                return (
-                  <Link
-                    key={path}
-                    href={path}
-                    className="transition-all hover:text-neutral-600 dark:hover:text-neutral-200 flex align-middle py-1 px-2 m-1"
-                  >
-                    {name}
-                  </Link>
-                );
-              })}
-            </nav>
           </div>
         </div>
       </header>

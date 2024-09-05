@@ -12,39 +12,15 @@ function ArrowIcon() {
         fill="currentColor"
       />
     </svg>
-  )
+  );
 }
 
 export default function Footer() {
   return (
-    <footer className="max-w-xl mx-4 mt-8 sm:mx-auto mb-16">
-      <ul className="font-sm mt-8 flex flex-col space-x-0 space-y-2 text-neutral-600 md:flex-row md:space-x-4 md:space-y-0 dark:text-neutral-300">
-        <li>
-          <a
-            className="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100"
-            rel="noopener noreferrer"
-            target="_blank"
-            href="/rss"
-          >
-            <ArrowIcon />
-            <p className="ml-2 h-7">RSS</p>
-          </a>
-        </li>
-        <li>
-          <a
-            className="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100"
-            rel="noopener noreferrer"
-            target="_blank"
-            href="https://github.com/weakow"
-          >
-            <ArrowIcon />
-            <p className="ml-2 h-7">GitHub</p>
-          </a>
-        </li>
-      </ul>
+    <footer className="max-w-xl mx-4 mt-16 sm:mx-auto mb-16 text-sm">
       <p className="mt-8 text-neutral-600 dark:text-neutral-300">
         © {new Date().getFullYear()} weakow
       </p>
     </footer>
-  )
+  );
 }
