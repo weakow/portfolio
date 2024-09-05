@@ -2,15 +2,15 @@ import Link from "next/link";
 import Logo from "app/components/logo";
 
 const navItems = {
-  "/design-systems": {
+  "/article/design-systems": {
     name: "数字产品设计的系统化方法",
     tagline: "Making a Design Systems",
   },
-  "/typography": {
+  "/article/typography": {
     name: "Web设计的中文排版",
     tagline: "Chinese Web Typography",
   },
-  "/ai-in-design": {
+  "/article/ai-in-design": {
     name: "AI驱动的产品设计与开发",
     tagline: "AI in Design & Development",
   },

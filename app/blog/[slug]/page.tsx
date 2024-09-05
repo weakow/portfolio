@@ -63,7 +63,7 @@ export default function Blog({ params }) {
   return (
     <>
       <Navbar />
-      <section className="max-w-xl mx-4 mt-8 sm:mx-auto">
+      <main className="max-w-xl mx-4 mt-8 sm:mx-auto">
         <script
           type="application/ld+json"
           suppressHydrationWarning
@@ -97,7 +97,7 @@ export default function Blog({ params }) {
         <article className="prose">
           <CustomMDX source={post.content} />
         </article>
-      </section>
+      </main>
       <Footer />
     </>
   );
