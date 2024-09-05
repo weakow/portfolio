@@ -6,9 +6,12 @@ import React from "react";
 
 function BigTitle(props) {
   return (
-    <h1 className="title font-semibold text-2xl tracking-tighter">
-      {props.title}
-    </h1>
+    <div className="not-prose">
+      <div className="mb-2 title serif font-semibold text-3xl tracking-wider text-center">
+        {props.title}
+      </div>
+      <div className="mb-16 text-center text-xs uppercase font-regular tracking-widest text-amber-500">{props.tagline}</div>
+    </div>
   );
 }
 
