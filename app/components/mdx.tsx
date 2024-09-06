@@ -71,7 +71,11 @@ function CustomLink(props) {
 }
 
 function RoundedImage(props) {
-  return <Image alt={props.alt} className="rounded-lg" {...props} />;
+  return <Image alt={props.alt} className="rounded-sm" {...props} />;
+}
+
+function Caption({children, ...props}) {
+  return <div className="my-2 text-center text-xs text-gray-600" {...props}>{children}</div>;
 }
 
 function Code({ children, ...props }) {
@@ -125,6 +129,7 @@ let components = {
   Table,
   BigTitle,
   BigTitleTwoLines,
+  Caption,
 };
 
 export function CustomMDX(props) {

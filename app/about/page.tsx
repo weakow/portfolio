@@ -11,8 +11,8 @@ export default function Page() {
     <div>
       <Navbar />
       <div className="max-w-xl mx-4 mt-8 sm:mx-auto">
-        <h1 className="font-semibold text-2xl mb-8 tracking-tighter">关于</h1>
-        <p>by weakow</p>
+        <h1 className="font-semibold text-2xl mb-8 tracking-tighter">A Digital Craftsman</h1>
+        <p>...</p>
       </div>
       <Footer />
     </div>
