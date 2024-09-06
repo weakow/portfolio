@@ -10,7 +10,7 @@ function BigTitle(props) {
       <div className="mb-2 title serif font-semibold text-3xl tracking-wider text-center">
         {props.title}
       </div>
-      <div className="mb-16 text-center text-xs uppercase font-regular tracking-widest text-amber-500">{props.tagline}</div>
+      <div className="mb-8 text-center text-xs uppercase font-regular tracking-widest text-amber-500">{props.tagline}</div>
     </div>
   );
 }
@@ -25,7 +25,7 @@ function BigTitleTwoLines(props) {
         {props.subtitle}
       </div>
       <div className="mb-0 text-center text-xs md:text-sm font-semibold uppercase font-regular tracking-widest text-amber-500">{props.tagline}</div>
-      <div className="mb-16 text-center text-xs uppercase font-light tracking-widest text-amber-500">{props.subline}</div>
+      <div className="mb-8 text-center text-xs uppercase font-light tracking-widest text-amber-500">{props.subline}</div>
     </div>
   );
 }
