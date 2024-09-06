@@ -11,7 +11,7 @@ const navItems = {
     tagline: "Chinese Web Typography",
   },
   "/article/ai-in-design": {
-    name: "AI驱动的产品设计与开发",
+    name: "AI在设计与开发中的应用",
     tagline: "AI in Design & Development",
   },
 };

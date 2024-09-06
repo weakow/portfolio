@@ -15,6 +15,21 @@ function BigTitle(props) {
   );
 }
 
+function BigTitleTwoLines(props) {
+  return (
+    <div className="not-prose">
+      <div className="mb-2 title serif font-semibold text-4xl md:text-5xl tracking-wider text-center">
+        {props.title}
+      </div>
+      <div className="mb-4 title serif font-light text-2xl md:text-4xl tracking-wider text-center">
+        {props.subtitle}
+      </div>
+      <div className="mb-0 text-center text-xs md:text-sm font-semibold uppercase font-regular tracking-widest text-amber-500">{props.tagline}</div>
+      <div className="mb-16 text-center text-xs uppercase font-light tracking-widest text-amber-500">{props.subline}</div>
+    </div>
+  );
+}
+
 function Table({ data }) {
   let headers = data.headers.map((header, index) => (
     <th key={index}>{header}</th>
@@ -109,6 +124,7 @@ let components = {
   code: Code,
   Table,
   BigTitle,
+  BigTitleTwoLines,
 };
 
 export function CustomMDX(props) {
