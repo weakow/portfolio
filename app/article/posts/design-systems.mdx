@@ -1,25 +1,126 @@
 ---
 title: "数字产品设计的系统化方法"
 publishedAt: "2024-09-05"
-summary: "数字产品设计的系统化方法"
+summary: "设计体系 (design system) 因沟通协作的需要而生，为增长和扩张而生，已成现代UI/UX工作体系的重要组成部分。"
 ---
 
 <BigTitleTwoLines
   title="设计体系"
   subtitle="数字产品设计的系统化方法"
   tagline="Design Systems"
-  subline="Methodology for Making Digital Products"
+  subline="Way of Making Digital Products"
 />
 
-## 初代Web构建方法
-
-1991年，Tim Berners-Lee构建了世界上第一个网站。制作这种极为简单的网页不需要多人协作，一个人就可以完成。
-
-<div class="columns-2 lg:-mx-16">
-  <Image src="/first-browser.png" width="1024" height="700" alt="世界上第一个浏览器" />
-  <Image src="/first-website.png" width="1024" height="700" alt="世界上第一个网站" />
+<div class="mt-8 mb-12 text-center font-sm">
+  <i>by weakow</i>
 </div>
 
-<Caption>世界上第一个浏览器WorldWideWeb（模拟器）和世界上第一个网站（使用现代浏览器打开）</Caption>
+## 初代 Web 构建方法
 
+1991 年，Tim Berners-Lee 构建了世界上第一个网站。制作这种极为简单的网页不需要多人协作，一个人就可以完成。
 
+<div class="columns-2 mt-6 lg:-mx-16">
+  <div>![世界上第一个浏览器](/first-browser.png)</div>
+  <div>![世界上第一个网站](/first-website.png)</div>
+</div>
+
+<Caption>世界上第一个浏览器 WorldWideWeb (模拟器) 和世界上第一个网站 (使用现代浏览器打开)</Caption>
+
+复杂的产品需要多人协作，为了解决设计人员与开发人员的沟通问题，有了原型设计、UI 设计的方法论和工具。
+
+<div class="columns-2 mt-6 lg:-mx-16">
+  <div>![Fireworks](/fireworks.jpg)</div>
+  <div>![UI设计工具](/ui-tools.png)</div>
+</div>
+
+<Caption>Fireworks (左) 是 Sketch 崛起之前最专业的界面设计工具，Macromedia 被收购后，Fireworks 逐渐遭弃。受 Sketch 启发，Adobe 推出 XD 抢占利基市场，但不成气候。后起之秀 Figma 在 UI/UX 领域已渐成主流。</Caption>
+
+设计工具的基本功能，是对 UI 的像素级呈现和对交互的模拟。随着软件项目越来越复杂，有两个方面的问题值得改进：
+
+1. 重复的元素需要统一的规范，具体来说，就是组件库和样式规则
+2. 设计人员和开发人员的交接，需要尽可能提高效率，减少错误
+
+为了解决这些问题，UI/UX 领域逐渐形成了一套完整的方法论：**设计体系 (design system)**。
+
+## 理解设计体系
+
+设计体系的核心是解决扩张 (scaling) 问题。
+
+随着产品的发展，用户在扩张，界面在扩张，组织成员在扩张，要跟上种种扩张，研发团队也需要形成适应扩张的工作方式。
+
+![设计体系的作用](/design-system-benefits.svg)
+
+构建设计体系的本质就是通过梳理产品目标、设计理念、设计语言，整理组件库和样式规则，形成对未来设计的指导。前期多花了时间，总体节省了时间。
+
+实施设计体系的关键则在于建立共享的语言 (shared language)，也就是团队成员说同样的话，对同一种元素有同样的叫法，对同一种行为有统一的规则。
+
+## 设计体系的构成
+
+### 组件库
+
+编写代码有 DRY (don't repeat yourself) 原则，重复出现的元素便构成了组件 (component)。
+
+<Figure
+  src="/sketch-design-systems.png"
+  width="800"
+  height="450"
+  caption="Sketch 对设计体系的支持"
+/>
+
+### 样式风格
+
+特定的样式风格是设计语言的基础，设计语言是品牌的一部分。
+
+从视觉上讲，样式风格包含静态的配色和动态的动画。动画不仅包含元素本身的变幻 (animation)，还包含各种过渡效果 (transition)。为了让原型图更准确地反映实际效果，还需要模拟交互。坦白说，高保真和交互的模拟都是投入产出比很低的事情，但在历史上这些工作确实是有价值的。
+
+<Figure
+  src="/figma-design-systems.png"
+  width="800"
+  height="450"
+  caption="Figma 对设计体系的支持"
+/>
+
+风格的要求不仅是视觉上的，还包括语言上的，也就是 UI 用语的语气、语调、惯用词汇等等。
+
+### 文档与知识库
+
+将设计体系所包含的所有内容形成完整的文档知识库，有助于设计体系的更新迭代，也有助于设计体系在团队内的推行与实施。
+
+设计体系的文档融入组织现有的知识库是一种理想的选择，但组织现有的知识库软件与设计师所用的工具是脱节的。不同工具之间的内容可以做一定程度的链接，但往往不具有同步性。在这种情况下，设计体系在组织知识库里的体现建议包含以下内容：
+
+1. 设计原则
+2. 组件列表与指向相应文件的链接，对于以设计为基础的设计体系，指向 Figma 文件，对于以代码为基础的设计体系，指向 Storybook
+3. 视觉样式的要素，指向 Figma 文件
+4. 非视觉样式的说明
+
+<div class="columns-2 mt-6 lg:-mx-16">
+  <div>![Lens设计体系](/lens.png)</div>
+  <div>![Carbon设计体系](/carbon.png)</div>
+</div>
+
+<Caption>设计体系的文档</Caption>
+
+## 构建设计体系的方式
+
+构建设计体系有两种实现路径，一是从设计出发，以设计稿为基准构建代码，即 design to code (D2C)，二是从代码出发，以代码库作为组件库和样式规则的基础，即 code to design (C2D)。
+
+### 从设计出发 (D2C)
+
+从设计到代码是最为常见的工作方式。在这种模式下，组件库和样式规则由设计师在设计工具中创建和维护。
+
+### 从代码到设计 (C2D)
+
+从代码到设计也是一种很自然的工作方式，如果一个产品的特定的组件库和样式规范，那么构建特定的界面就应该有固有的模式，而不容天马行空的新设计。
+
+在这种模式下，设计师的精力更多地放在需要发挥创意的工作上，而不是现有设计体系的应用。大多数 UI 是组件与样式的复用，这类工作适合交给 AI，它们不是设计师的重点。
+
+要实现 C2D，需要设计人员和开发人员的配合，或者由兼具设计能力与编码能力的人员实现，这意味着 C2D 有很高的门槛。但如果能克服这个门槛，那对组织效率来说绝对是有意义的。
+
+历史上诞生过很多实现 C2D 的工具，比较有代表性的是 SaaS 模式的 [UXPin](https://www.uxpin.com/) 和开源的 [Storybook](https://storybook.js.org/)。
+
+<div class="columns-2 lg:-mx-16">
+  <div>![UXPin](/uxpin.png)</div>
+  <div>![Storybook](/storybook.png)</div>
+</div>
+
+<Caption>左：UXPin，右：Storybook</Caption>

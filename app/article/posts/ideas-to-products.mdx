@@ -1,0 +1,126 @@
+---
+title: "从想法到产品"
+publishedAt: "2024-09-10"
+summary: "想法→设计→代码→产品，从传统的瀑布式的流程，到Figma的方案，到AI如何改变从想法到产品的流程。"
+---
+
+<BigTitleTwoLines
+  title="从想法到产品"
+  subtitle="工具与方法的变迁"
+  tagline="From Ideas to Products"
+  subline="Changing Tools and Approaches"
+/>
+
+<div class="mt-8 mb-12 text-center font-sm">
+  <i>by weakow</i>
+</div>
+
+## 传统的方法
+
+![从想法到产品：传统的方法](/traditional-waterfall.svg)
+
+设计工具的出现，主要解决两个问题：
+
+1. 创意阶段需要把点子和想法画出来，并可能开展由粗到细的打磨
+2. 开发人员以设计稿为基础进行编码，设计稿是沟通与协作的基础
+
+有一系列工具和方法用于完成从想法到编码的过程：
+
+**头脑风暴 (brainstorming)** 是创意显化的过程，传统的工具是白板和便利贴，电子工具的佼佼者是诞生于 2019 年的 [Miro](https://miro.com/)。
+
+<div class="columns-2 mt-6 md:mt-8 lg:-mx-16">
+  <div>![用便利贴做头脑风暴](/brainstorming.jpg)</div>
+  <div>![用Miro做头脑风暴](/miro.png)</div>
+</div>
+
+<Caption>Miro 模拟现实的便利贴</Caption>
+
+**线框图 (wireframe)** 是粗线条的原型图，在想法打磨阶段特别有用，用传统纸笔或电子工具都可以。在电脑上操作时，有意使用手写字体和手绘样式反而是有帮助的，[Balsamiq](https://balsamiq.com/) 就是这样。
+
+**原型图 (prototype)** 可以做得很简单，也可以做得很精细，即高保真原型图 (high-fidelity prototype，简称 hi-fi)。为了让原型图更准确地反映实际效果，还需要模拟交互。坦白说，高保真和交互的模拟都是投入产出比很低的事情，但在历史上这些工作确实是有价值的。最有名的原型工具是 [Axure](https://www.axure.com/)。
+
+<div class="columns-2 mt-6 md:mt-8 lg:-mx-16">
+  <div>![Balsamiq](/balsamiq.png)</div>
+  <div>![Axure](/axure.png)</div>
+</div>
+
+<Caption>左：Balsamiq，右：Axure</Caption>
+
+[Sketch](https://www.sketch.com/) 是第一个真正有影响力的专为数字产品界面设计而生的工具，但它仅支持 macOS 是其致命的限制。将设计稿交接给开发人员 (handoff) 是研发团队的刚需，Sketch 的生态缺失让[蓝湖](https://lanhuapp.com/)得以流行。
+
+<div class="columns-2 mt-6 md:mt-8 lg:-mx-16">
+  <div>![Sketch](/sketch.png)</div>
+  <div>![蓝湖](/lanhu.png)</div>
+</div>
+
+<Caption>左：Sketch，右：蓝湖</Caption>
+
+## Figma 的方案
+
+![Figma的方案](/figma-way.svg)
+
+[Figma](https://www.figma.com) 诞生于 Sketch 之后。它首先解决了跨平台的问题，无论使用什么操作系统，打开浏览器就能使用，而且体验不输原生应用。通过这一点，使用 Windows 的设计师进来了。
+
+其次，Figma 天然支持协作，设计师、产品经理、开发人员都可以实时看到设计稿的变化。通过这一点，产品经理和开发人员都进来了。前者是从想法到设计的关键人员，Figma 取代了原型工具；后者是从设计到代码的关键人员，Figma 取代了 handoff 工具。
+
+正是看到协作的价值，在从想法到代码的链条上，Figma 不断延伸和创新。
+
+2021 年，Figma 推出 [FigJam](https://www.figma.com/figjam/)，从想法到设计的链条得以延长。
+
+2023 年，Figma 推出 [Dev Mode](https://www.figma.com/dev-mode/)，从设计到开发的链条得以延长。
+
+<div class="columns-2 mt-6 md:mt-8 lg:-mx-16">
+  <div>![FigJam](/figjam.png)</div>
+  <div>![Dev Mode](/dev-mode.png)</div>
+</div>
+
+<Caption>左：FigJam，右：Dev Mode</Caption>
+
+## AI 的方法
+
+![AI的方法](/ai-way.svg)
+
+AI 不是一个新的概念，最早被提出甚至可追溯至 20 世纪 50 年代。但是，2023 年前后开始风靡的基于大语言模型的生成式人工智能是一个分水岭。如果说基于 GPT 的 AI 是人工智能，那之前的 AI 约等于“人工智障”。
+
+AI 的发展非常迅猛，每天每月都有新的应用出现。目前，可以用到的实用技术包括：
+
+#### 从想法到设计
+
+Figma 于 2024 年 6 月推出的新版本增加了 [AI 功能](https://www.figma.com/blog/introducing-figma-ai/)，用自然语言输入设计想法，就能生成设计稿。配合现有的组件库和样式规则，可以生成符合规范的 UI。
+
+在 UI/UX 设计方面，AI 的典型能力还包括：
+
+- 内容填充：批量复制相似元素并模拟 (mock) 内容
+- 图层重命名：自动根据图层内容对图层进行重命名
+- 消除背景
+- 制作多语言版本
+
+AI 不足以聪明到完全替代人类，但它很像一个学习能力很强的助手，在处理重复性工作方面非常有用。
+
+2023 年推出的设计平台[妙多 Mottif](https://mottif.com/) 有着与 Figma 相似的能力。目前，Mottif 也支持用 AI 生成设计稿，但截至目前还不能根据设计体系构建 UI。
+
+#### 从想法到代码
+
+如果有一个新的产品构想，能否直接生成产品呢？很难一步到位，但基于从自然语言到代码的工具，这一过程可被大大加快。
+
+维护 [Next.js](https://nextjs.org) 框架的 [Vercel](https://vercel.com) 推出了一个 UI 生成工具 [v0](https://v0.dev/)。输入自然语言就能生成 UI，而这个 UI 并非躺在 UI 设计软件里的设计稿，而是可以直接运行的代码。
+
+当然，鉴于 Vercel 本身的技术栈，它所生成的是 React 和 Next.js 代码，并自动引入了 [Tailwind CSS](https://tailwindcss.com/) (样式编辑框架) 和 [shadcn/ui](https://ui.shadcn.com/) 组件库。
+
+由于 v0 生成的不是设计稿而是可运行的代码，所以它可以直接嵌入代码库，配合 CI/CD (持续集成/持续交付) 工具，打磨好的界面甚至可以直接发布为产品。
+
+![AI工具在链条中的位置](/ai-tools.svg)
+
+[Cursor](https://cursor.sh/) 是一种更全面的方案。Cursor 是 VS Code 的一个分支，界面与 VS Code 很像，只是增加了 AI 对话和代码生成功能。
+
+通过与 AI 对话，把想法用自然语言描述出来，Cursor 便会给出方案，生成代码。如果对方案有疑问或异议，可以与 AI 连续对话。
+
+在编码过程中，Cursor 会即时生成预测代码，按下 Tab 键便可采纳这些代码。就像开着智能辅助驾驶汽车的司机要做的是监督汽车的行进，使用 Cursor 写代码要做的是检查它生成的代码，判断是否接受。
+
+<Figure
+  src="/cursor.png"
+  alt="Cursor"
+  width="800"
+  height="475"
+  caption="实际使用中的 Cursor"
+/>
