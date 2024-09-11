@@ -23,10 +23,10 @@ export default function Page() {
         className="min-h-72 md:h-screen md:w-1/2 xl:w-1/3 flex flex-col"
         style={{ background: "#FFDA91" }}
       >
-        <div className="grow flex items-center justify-center p-8">
+        <div className="grow flex items-center justify-center px-8 py-16 md:p-8">
           <Logo size={108} />
         </div>
-        <div className="flex-none p-8">
+        <div className="flex-none px-8 pt-0 pb-6 md:pt-8">
           <h1 className="p-0 m-0 text-3xl font-semibold tracking-tight">
             weakow
           </h1>
