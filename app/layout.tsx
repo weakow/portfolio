@@ -58,6 +58,8 @@ export default function RootLayout({
           href="/apple-touch-icon.png"
           type="image/png"
         />
+        <meta name="apple-mobile-web-app-capable" content="yes"></meta>
+        <meta name="apple-mobile-web-app-status-bar-style" content="#FFDA91"></meta>
       </head>
       <body className="antialiased">
         <main className="flex-auto">
