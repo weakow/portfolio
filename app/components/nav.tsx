@@ -18,7 +18,7 @@ export function Navbar() {
           >
             <div className="flex">
               <Link href="/">
-                <Logo size={36} />
+                <Logo size={36} home={false} />
               </Link>
             </div>
             <nav className="flex justify-end text-xs font-bold">
@@ -27,7 +27,7 @@ export function Navbar() {
                   <Link
                     key={path}
                     href={path}
-                    className="transition-all hover:text-amber-500 dark:hover:text-amber-200 flex align-middle py-1 px-2 m-1"
+                    className="transition-all hover:text-amber-500 dark:hover:text-amber-400 flex align-middle py-1 px-2 m-1"
                   >
                     {name}
                   </Link>

@@ -10,7 +10,7 @@ function BigTitle(props) {
       <h1 className="mb-2 title !font-serif !font-black !text-3xl md:!text-4xl stracking-wider text-center">
         {props.title}
       </h1>
-      <div className="mb-8 text-center text-xs uppercase font-semibold tracking-widest text-amber-500">
+      <div className="mb-8 text-center text-xs uppercase font-semibold tracking-widest text-amber-500 dark:text-amber-400">
         {props.tagline}
       </div>
     </div>
@@ -26,7 +26,7 @@ function BigTitleTwoLines(props) {
       <div className="mb-2 title font-light text-3xl md:text-3xl tracking-wider text-center">
         {props.subtitle}
       </div>
-      <div className="mb-8 text-center text-xs md:text-sm font-semibold uppercase font-regular tracking-widest text-amber-500">
+      <div className="mb-8 text-center text-xs md:text-sm font-semibold uppercase font-regular tracking-widest text-amber-500 dark:text-amber-400">
         {props.tagline}
         {props.subline && (
           <div className="md:text-xs font-light">{props.subline}</div>
@@ -61,7 +61,7 @@ function Figure(props) {
         <Image alt={props.alt} className="rounded-sm" {...props} />
       </div>
       {props.caption && (
-        <figcaption className="mt-2 text-center text-xs text-neutral-600">
+        <figcaption className="mt-2 text-center text-xs text-neutral-600 dark:text-neutral-400">
           {props.caption}
         </figcaption>
       )}
@@ -104,7 +104,7 @@ function Table({ data }) {
 
 function Caption({ children, ...props }) {
   return (
-    <div className="mt-2 mb-6 text-center text-xs text-neutral-600" {...props}>
+    <div className="mt-2 mb-6 text-center text-xs text-neutral-600 dark:text-neutral-400" {...props}>
       {children}
     </div>
   );
