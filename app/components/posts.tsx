@@ -32,10 +32,10 @@ export function BlogPosts() {
             </div>
             <div className="basis-1/2 md:basis-1/3 md:flex-shrink-0 flex justify-end">
               <Image
-                src={post.metadata.image || "/default-thumbnail.jpg"}
+                src={post.metadata.image || "/default-thumbnail.png"}
                 alt={post.metadata.title}
                 width={180}
-                height={120}
+                height={76}
                 className="rounded-sm object-cover"
               />
             </div>
