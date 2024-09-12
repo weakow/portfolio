@@ -10,7 +10,7 @@ export const metadata = {
 export default function Page() {
   return (
     <div>
-      <Navbar />
+      <Navbar blogPost={false} />
       <div className="max-w-xl mx-4 mt-8 sm:mx-auto">
         <p>
           <Image src="/social-weakow.svg" width="480" height="320" alt="weakow at social media" />

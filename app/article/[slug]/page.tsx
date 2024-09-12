@@ -62,7 +62,7 @@ export default function Article({ params }) {
 
   return (
     <>
-      <Navbar />
+      <Navbar blogPost={false} />
       <main className="max-w-xl mx-4 mt-8 sm:mx-auto">
       <script
         type="application/ld+json"

@@ -7,7 +7,7 @@ import React from "react";
 function BigTitle(props) {
   return (
     <div className="not-prose">
-      <h1 className="mb-2 title !font-serif !font-black !text-3xl md:!text-4xl stracking-wider text-center">
+      <h1 className="mb-2 title !font-serif !font-neutral-800 !text-3xl md:!text-4xl stracking-wider text-center">
         {props.title}
       </h1>
       <div className="mb-8 text-center text-xs uppercase font-semibold tracking-widest text-amber-500 dark:text-amber-400">
@@ -20,7 +20,7 @@ function BigTitle(props) {
 function BigTitleTwoLines(props) {
   return (
     <div className="not-prose">
-      <h1 className="mb-1 title !font-black !text-4xl md:!text-4xl !tracking-wider text-center">
+      <h1 className="mb-1 title !text-4xl md:!text-4xl !tracking-wider text-center">
         {props.title}
       </h1>
       <div className="mb-2 title font-light text-3xl md:text-3xl tracking-wider text-center">

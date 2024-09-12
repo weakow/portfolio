@@ -5,8 +5,8 @@ function LogoImg({ size, home }) {
       height={size}
       viewBox="0 0 36 36"
       xmlns="http://www.w3.org/2000/svg"
-      className={`transition-all duration-300 fill-neutral-800 hover:fill-neutral-600 ${
-        home ? 'dark:hover:fill-black' : 'dark:fill-white dark:hover:fill-amber-400'
+      className={`transition-all duration-300 fill-neutral-800 hover:fill-amber-500 ${
+        home ? 'hover:fill-black dark:hover:fill-black' : 'dark:fill-white dark:hover:fill-amber-400'
       }`}
     >
       <rect width={size} height={size} fill="transparent" />

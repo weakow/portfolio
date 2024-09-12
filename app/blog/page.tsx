@@ -10,7 +10,7 @@ export const metadata = {
 export default function Page() {
   return (
     <>
-      <Navbar />
+      <Navbar blogPost={false} />
       <section className="max-w-xl mx-4 mt-8 sm:mx-auto">
         <BlogPosts />
       </section>

@@ -4,6 +4,7 @@ import { formatDate, getBlogPosts } from "app/blog/utils";
 import { baseUrl } from "app/sitemap";
 import { Navbar } from "app/components/nav";
 import Footer from "app/components/footer";
+import Link from "next/link";
 
 export async function generateStaticParams() {
   let posts = getBlogPosts();
@@ -62,7 +63,7 @@ export default function Blog({ params }) {
 
   return (
     <>
-      <Navbar />
+      <Navbar blogPost={true} />
       <main className="max-w-xl mx-4 mt-8 sm:mx-auto">
         <script
           type="application/ld+json"
@@ -86,7 +87,7 @@ export default function Blog({ params }) {
             }),
           }}
         />
-        <h1 className="title !font-black text-3xl tracking-tighter text-center">
+        <h1 className="title !font-bold text-3xl tracking-tighter text-center">
           {post.metadata.title}
         </h1>
         <div className="not-prose mt-8 mb-12 text-center text-base">
