@@ -12,7 +12,7 @@ export function Navbar() {
           >
             <div className="flex">
               <Link href="/">
-                <Logo size={36} />
+                <Logo size={36} home={false} />
               </Link>
             </div>
           </div>
