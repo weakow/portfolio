@@ -31,7 +31,7 @@ export default function Page() {
             weakow
           </h1>
           <p className="p-0 m-0 text-xl font-light leading-5">
-            <i>From ideas to products, with efficiency.</i>
+            <i>From ideas to products, accelerated.</i>
           </p>
         </div>
       </div>
